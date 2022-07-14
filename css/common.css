@@ -10,7 +10,7 @@ html, body {
     /* 和父元素的一样高，body 的父亲是 html，html 的父亲是浏览器窗口 */
     height: 100%;
     /* 页面背景 */
-    background-image: url(../image/background.jpg);
+    background-image: url(../image/背景.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
