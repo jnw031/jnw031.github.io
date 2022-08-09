@@ -1,2 +1,1 @@
-# jnw031.github.io
-I'M HELPING JNW PUT A VIDEO ON IT BUT PLEASE JNW DO NOT USE IMPULSIVE WORDS TO LET ME DO IT.
+# [Website](https://jnw031.github.io)
