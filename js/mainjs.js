@@ -1,8 +1,8 @@
 //console
 $(function() {
-    console.log("%c Yuxin Official %c", "background:#00aaff; color:#ffffff", "", "https://å¿ƒ.top");
-    console.log("%c æœ¬ç«™giteeæºç  %c", "background:#ff0000; color:#ffffff", "", "https://gitee.com/xyxywan/web");
-    console.log("%c åˆå§‹live2dæ¨¡åž‹ %c", "background:#00ff00; color:#ffffff", "",randmodel);
+    console.log("%c Yuxin Official %c", "background:#00aaff; color:#ffffff", "", "https://心.top");
+    console.log("%c 本站gitee源码 %c", "background:#ff0000; color:#ffffff", "", "https://gitee.com/xyxywan/web");
+    console.log("%c 初始live2d模型 %c", "background:#00ff00; color:#ffffff", "",randmodel);
 });	
 
 // Smooth scrolling -->
@@ -66,7 +66,7 @@ $(document).scroll(function() {
             ds.parentNode.insertBefore(zd, ds);})();*/
 //change bg_URL -->
     function randomNum(minNum,maxNum){
-        //ç”Ÿæˆä»ŽminNumåˆ°maxNumçš„éšæœºæ•°
+        //生成从minNum到maxNum的随机数
         switch(arguments.length){ 
             case 1: return parseInt(Math.random()*minNum+1,10); break; 
             case 2: return parseInt(Math.random()*(maxNum-minNum+1)+minNum,10); break; 
@@ -76,7 +76,7 @@ $(document).scroll(function() {
     function isRepeat(arr){
     var hash = {};
         for(var i in arr) {
-            if(hash[arr[i]]) //hash å“ˆå¸Œ
+            if(hash[arr[i]]) //hash 哈希
                 return true;
                 hash[arr[i]] = true;
         }
@@ -93,7 +93,7 @@ $(document).scroll(function() {
     var arr0=new Array();
     function randomIMG(int){
         arr0[int] = randomNum(1,18);
-        while(isRepeat(arr0)){arr0[int] = randomNum(1,18);}//é˜²æ­¢å›¾ç‰‡é‡å¤
+        while(isRepeat(arr0)){arr0[int] = randomNum(1,18);}//防止图片重复
         var gitee = 'https://xyxywan.gitee.io/web/img/banner_bg';
         var imgURL = gitee + arr0[int] +".webp";
         //[div]document.getElementById("BackgroundArea").style.backgroundImage="url("+imgURL+")";
@@ -115,8 +115,8 @@ $(document).scroll(function() {
                 script4.onload=script4.onreadystatechange=function(){
                 if(!this.readyState||this.readyState=="loaded"||this.readyState=="complete"){
                     setTimeout(function(){
-                        console.log("%c è®¿å®¢æ•°é‡ %c","background:#00aaff; color:#ffffff", "",visiter_data.total_people);
-                        console.log("%c æ€»è®¿é—®é‡ %c","background:#00aaff; color:#ffffff", "",visiter_data.total_times);
+                        console.log("%c 访客数量 %c","background:#00aaff; color:#ffffff", "",visiter_data.total_people);
+                        console.log("%c 总访问量 %c","background:#00aaff; color:#ffffff", "",visiter_data.total_times);
                     },2000)
 
             }
