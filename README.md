@@ -1,3 +1,3 @@
 # [Website](https://jnw031.github.io)
 
-` Help by Mikumo
+- Help by [MikuMo](https://github.com/mikemo2195054)
