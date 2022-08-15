@@ -1,3 +1,5 @@
-# [Website](https://jnw031.github.io)
+# [网址](https://jnw031.github.io)
 
-- Help by [MikuMo](https://github.com/mikemo2195054)
+- 由[MikuMo](https://github.com/mikemo2195054)帮助
+
+- 原站为[YuXin Offical](https://xyxywan.gitee.io/)
