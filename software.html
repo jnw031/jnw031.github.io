@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from xyxywan.gitee.io/web/software.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 16 Aug 2022 00:45:18 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta http-equiv="X-UA-Compatible" content="IE=11">
+
+<meta name="description" content="Neverland Minecraft Server">
+
+<title>软件下载 - jnw031<title>
+
+<!-- JS -->
+
+<script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+<script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/audio.js"></script>
+<script src="js/mainjs.js" type="text/javascript" charset="utf-8"></script>
+<script>
+$(function(){
+    $('a').click(function(){
+        //根据a标签的href转换为id选择器，获取id元素所处的位置，并高度减50px（这里根据需要自由设置）
+        $('html,body').animate({scrollTop: ($($(this).attr('href')).offset().top -50 )},1000);
+    });
+});
+</script>
+
+<!-- CSS -->
+<link rel="icon" type="image/x-icon" href="./favicon.ico">
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" >
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/animate.css/3.7.2/animate.min.css">
+<link rel="stylesheet" href="css/mainstyle.css">
+<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+<link rel="stylesheet" href="css/audio.css">
+
+
+
+
+
+
+</head>
+
+
+
+
+<body>
+<!-- Live2d -->	
+<div id="landlord" class="waifu" style="opacity:1 ;">
+    <div  class="message" style="opacity:0 ;font-size: 16px;color: #ffaa00;" ></div>
+    <canvas id="live2d" width="280" height="250" class="live2d" ></canvas>
+    <div class="waifu-tool" >
+            <span class="iconfont icon-home"></span>
+            <span class="iconfont icon-duihua"></span>
+            <span class="iconfont icon-yifu" title="换装~"></span>
+            <span class="iconfont icon-jietu"></span>
+            <span class="iconfont icon-qq"></span>
+            <span class="iconfont icon-gitee-fill-round"></span>
+            <span class="iconfont icon-yincang"></span>
+    </div>
+	<script type="text/javascript"> var message_Path = 'live2d/index.html'; var home_Path = 'live2d/index.html'; var chara = 'pio';</script>
+	<script type="text/javascript" src="live2d/js/live2d.js"></script>
+	<script type="text/javascript" src="live2d/js/message.js"></script>
+	<script type="text/javascript">
+		var randmodel = "live2d//model/Pio/model"+randomNum(1,31)+".json";
+			oldmodel = randmodel;
+		loadlive2d("live2d", randmodel);
+		
+		console.log("%c 初始的live2d模型 %c", "background:#00ff00; color:#ffffff", "",randmodel);
+	</script>
+	<link rel="stylesheet"	type="text/css" href="live2d/css/live2d.css"/>
+</div>	
+	
+<div class="logo">
+
+<div class="header-logo" style="background: rgba(0, 0, 0, 0); color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px;">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+
+
+<h2 class="logo fadeInLeft animated"> <a href="http://xn--15t.top/"><img src="../img/toux.jpg" style="width: 40px;height: 40px;border-radius: 10px "></a><a href="http://xn--15t.top/" style="color: rgb(255, 255, 255);"> Yuxin Official</a></h2>
+
+<div class="menu">
+
+<div class="menunav fadeInDown animated" style="left: 100vw;">
+
+<div class="hiddenonpc">
+<h3>Menu</h3>
+<a  onclick="shownav()"><i class="fa fa-angle-right"></i></a>
+</div>
+
+<a href="http://xn--15t.top/" class="item" style="color: rgb(255, 255, 255);">MainPage</a>
+<a href="contact%26donate.html" target="_blank" class="item" style="color: rgb(255, 255, 255);">捐助</a>
+
+</div>
+<a  class="item" id="shownav" onclick="shownav()" style="color: rgb(255, 255, 255);"><i class="fa fa-navicon"></i></a>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="home-bannar" onclick="hidenav()">
+
+<div class="backgrounds">
+<div class="img" style="background: url(_https_/xyxywan.gitee.io/img/banner_bg3.html) 0% 0% / cover; display: none;"></div>
+<div class="img" style="background: url(_https_/xyxywan.gitee.io/img/banner_bg1.html) 0% 0% / cover;"></div>
+<div class="img" style="background: url(_https_/xyxywan.gitee.io/img/banner_bg2.html) 0% 0% / cover; display: none;"></div>
+</div>
+
+<div class="shadow"></div>
+
+
+  <div class='card-holder' style="z-index:9999">
+  <div class='card-wrapper'>
+      <div class='card bg-01'>
+		<div id="audio" class="audio audio-off" style="border-color: red;">
+		      <audio id="audio-my" src="../html_video/soures/%e7%ad%89%e4%bb%80%e4%b9%88%e5%90%9b-%e8%be%9e%e4%b9%9d%e9%97%a8%e5%9b%9e%e5%bf%86.mp3" preload="metadata"></audio>
+		          <div class="audio-head">
+		<div class="audio-head-tittle">
+		              <div class="audio-head-tittle-text audio-head-tittle-text-off"></div>
+		           </div>
+		              <div class="audio-head-tittle-by"></div>
+		         </div>
+		         <div class="add"></div>
+		         <div class="min-time"></div>
+		         <div class="audio-img">
+		             <canvas id="audio-img-canvas" width="200px" height="200px"></canvas>
+		             <div  class="audio-img-cover audio-img-cover-off"></div>
+		             <canvas id="audio-img-canvas-play" class="audio-img-canvas-play-off" width="45px" height="200px"></canvas>
+		         </div>
+		         <div class="audio-text">歌词待更新</div>
+		         <div class="audio-by">
+		             <div class="audio-by-all">
+		                 <span class="audio-by-now"></span>
+		             </div>
+		             <div class="audio-by-text">
+		                 <span class="audio-by-text-now">00:00</span>
+		                 <span class="audio-by-text-all">00:00</span>
+		             </div>
+		         </div>
+		         <div class="audio-btn">
+		             <div class="audio-btn-list audio-btn-list-off"></div>
+		             <div class="audio-btn-before"></div>
+		             <div class="audio-btn-play audio-btn-play-off audio-btn-play-off-a"></div>
+		            <div class="audio-btn-sound"></div>
+		           <div class="audio-btn-next"></div>
+		         </div>
+		       <div class="audio-sound">
+		            <div class="audio-sound-all">
+		                 <span class="audio-sound-now"></span>
+		            <span class="audio-sound-art"></span>
+		             </div>
+		         </div>
+		     </div>
+		    <a class="audio-head-tittle-text-out"></a>
+		     <a class="audio-head-tittle-text-out-a"></a>
+		
+		
+		<div style="text-align:center;margin:150px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+			
+		</div>
+      </div>
+    </a>
+  </div>
+
+  
+</div>
+
+
+
+
+<div class="inbox">
+
+<div class="inbox2">
+
+<h2 class="line1 bounceInDown animated" style="margin-top: 15vh;"><i class="fa fa-server fa-2x"> 资源列表 </i></h2>
+<h2>
+<p class="line2 bounceInLeft animated delay-h5s">鉴于现在大多数网站都把文件储存在百度网盘以供下载，而百度网盘的抠门带宽十分感人。</p>
+<p class="line2 bounceInLeft animated delay-h5s">因此提供一些软件的快速下载途径，远离百度网盘压迫。</p>
+<p style="color: red;font-size: 20px;"><strong>建议使用IDM多线程下载，获得满带宽的下载体验</strong></p>
+<div class="joinbtn">
+<a href="#mid" ><button class="jbtn bounceInLeft animated delay-1s">查看分类 </button></a>
+
+</div>
+</h2>
+</div>
+</div>
+</div>
+
+<div id="mid"  class="body-part3"style="height:auto;">
+<br /><br /><br />
+<h1 class="link-title fadeInRight animated">分类</h1>
+<p class="link-subtitle fadeInLeft animated">选择一个分类</p>
+<br /><br />
+
+<div class="link cont-1 fadeInUp animated">
+<a href="#333" onclick="javascript:top.location='javascript:alert0();javascript:alert4();javascript:alert1()';" target="_self">
+
+
+<h1><i class="fa fa-skyatlas fa-2x"></i></h1>
+<h3>Adobe</h3>
+</a>
+</div>
+
+
+<div class="link cont-2 fadeInUp animated delay-h5s">
+<a href="#333" onclick="javascript:top.location='javascript:alert0();javascript:alert4();javascript:alert2()';" target="_self">
+<h1><i class="fa fa-windows fa-2x"></i></h1>
+<h3>office</h3>
+</a>
+</div>
+
+<div class="link cont-3 fadeInUp animated delay-1s">
+<a  onclick="javascript:top.location='javascript:alert0();javascript:alert4();javascript:alert3();';"  href="#333" target="_self">
+<h1><i class="fa fa-folder-open fa-2x"></i></h1>
+<h3>软件</h3>
+</a>
+</div>
+
+
+<div class="link cont-3 fadeInUp animated delay-1s">
+<a href="#333" onclick="javascript:top.location='javascript:alert0();javascript:alert4();javascript:alert5();';" target="_self">
+<h1><i class="fa fa-gamepad fa-2x"></i></h1>
+<h3>游戏</h3>
+</a>
+</div>
+
+
+<br /><br /><br /><br /><br />
+
+
+</div>
+
+
+
+
+
+<style>
+	#form1{
+		display: none;
+		}
+	#form2{
+		display: none;
+		}
+	#form3{
+		display: none;
+		}
+	#form4{
+		display: none;
+		}
+	#form5{
+		display: none;
+		}
+
+</style>
+<div  id="333" display:none></div>
+<div id="form4" class=" text-center" style="color:#00aaff">
+
+<div class="body-part2 text-center">
+
+
+
+
+
+
+<br><br><br><br>
+
+<div id="form1" class=" text-center" style="width:70%;height:auto;margin:0 auto;background-color:white;opacity: 0.9;border:2px solid #96c2f1;border-radius: 10px;font-size:20px;color:#00aaff">
+<form>
+<a href="#mid" onclick="javascript:top.location='javascript:alert0()';" style="float: right;color: #00aaff;"><i class="fa fa-times fa-4x"></i></a>
+<br>
+<h1  style="font-size:35px;color:red;">ADOBE</h1>
+<h1 class="link-title fadeInLeft animated"><i class="fa fa-download fa-2x"></i></h1>
+
+<li ><a href="https://mailhfuteducn-my.sharepoint.com/:u:/g/personal/2018211832_mail_hfut_edu_cn/ES8BF1lc5BhDta5OuNZzU90BYTlRMhCSn9I8JNUjK9IPng?e=tod1Yp"><code>Acrobat DC 2020</code></a> 714MB; 直装破解版</li>
+<li><a href="https://mailhfuteducn-my.sharepoint.com/:u:/g/personal/2018211832_mail_hfut_edu_cn/EYyv8gmCULNJv0akmx11CQYBcNAY7dFxm8TlymVjy6sYMQ?e=MWCAUG"><code>Photoshop CC 2018</code></a> 1.56GB; 使用工具破解</li>
+
+<li><a href="https://mailhfuteducn-my.sharepoint.com/:u:/g/personal/2018211832_mail_hfut_edu_cn/ETlRVXqzg7JErovadiCKOvABETpHF--Rn_vAYpXJc7MZPA?e=JdFnuQ"><code>Premiere Pro CC 2018</code></a> 1.57GB; 使用工具破解</li>
+
+<li><a href="https://mailhfuteducn-my.sharepoint.com/:u:/g/personal/2018211832_mail_hfut_edu_cn/EUrsPg5MjeRCnkSrqoXrmvMBHIVBIzXLEABxsmv-qx6GUg?e=INdqEo"><code >DreamWeaver CC 2019</code></a> 1.00GB; 使用工具破解</li>
+
+<hr>破解工具
+<li><a href="https://mailhfuteducn-my.sharepoint.com/:u:/g/personal/2018211832_mail_hfut_edu_cn/ERC3J27Ps_NLpb6dqD_7kHgBV1aX-j40voP-fHz7wtYLsw?e=AEeMId"><code >amtemu.v0.9.2-painter</code></a> 2.39MB; 最常用的破解工具</li>
+
+<li><a href="https://mailhfuteducn-my.sharepoint.com/:u:/g/personal/2018211832_mail_hfut_edu_cn/EfRHD1aG68NLvElmK7ndlOkBriROexVWVsfrD-3tmyF29w?e=0UasPt"><code >Adobe MPT2019</code></a> 2.53MB; 支持2019版本64位AE/AU/Ch/DW/ Ai/iD/Lr/ME/PS/PR</li>
+
+<li><a href="https://mailhfuteducn-my.sharepoint.com/:u:/g/personal/2018211832_mail_hfut_edu_cn/EbJKRDPJS9pPtsdKlcQK6IUBe4W8lceZWJMnV67A1aVBeg?e=55K2sS"><code >Adobecc2019-2020genp</code></a> 19.8MB; 支持2019-2020各adobe软件的破解 (最新版本的adobe软件可能无法破解)</li>
+</form>
+</div>
+
+
+
+<div id="form2" class=" text-center" style="width:70%;height:auto;margin:0 auto;background-color:white;opacity: 0.9;border:2px solid #96c2f1;border-radius: 10px;font-size:20px;color:#00aaff">
+<form>
+<a href="#mid" onclick="javascript:top.location='javascript:alert0()';" style="float: right;color: #00aaff;"><i class="fa fa-times fa-4x"></i></a>
+<br>
+<h1  style="font-size:35px;color:red;">OFFICE</h1>
+<h1 class="link-title fadeInLeft animated"><i class="fa fa-download fa-2x"></i></h1>
+
+<li>Office2016专业增强版<a href="https://mailhfuteducn-my.sharepoint.com/:u:/g/personal/2018211832_mail_hfut_edu_cn/ES5lgo_UPiFGpM_CtzksaKoBGSqYcV1SttP-s0EjDrZ5KA?e=pcPaXN"><code>Office Professional Plus 2016</code></a> 1.05GB; 使用KMS激活</li>
+
+
+<hr>破解工具
+
+<li><a href="https://mailhfuteducn-my.sharepoint.com/:u:/g/personal/2018211832_mail_hfut_edu_cn/EWLLsBSOi3ZOryDmywlCLDwBSJYp_I2SLyxnwV0m4_4tGw?e=WkVH6P"><code >KMSpico Install</code></a> 3.04MB; 可激活win7,8,10;office 2010/2013/2016;Win Server 2008/2012/2016</li>
+
+<li><a href="https://mailhfuteducn-my.sharepoint.com/:u:/g/personal/2018211832_mail_hfut_edu_cn/EbXL4FqoyiRLuHEjpEpudlwB8YCvHoihJ2qcbVPuow6xoA?e=TpVABb"><code >Office 2019 KMS Activator Ultimate 1.1.exe</code></a> 358KB; Office2019激活工具</li>
+
+
+
+</form>
+</div>
+
+
+
+<div id="form3" class=" text-center" style="width:70%;height:auto;margin:0 auto;background-color:white;opacity: 0.9;border:2px solid #96c2f1;border-radius: 10px;font-size:20px;color:#00aaff">
+            <form>
+<a href="#mid" onclick="javascript:top.location='javascript:alert0()';" style="float: right;color: #00aaff;"><i class="fa fa-times fa-4x"></i></a>
+<br>
+<h1  style="font-size:35px;color:red;">软件</h1>
+<h1 class="link-title fadeInLeft animated"><i class="fa fa-download fa-2x"></i></h1>
+
+
+<li><a href="https://mailhfuteducn-my.sharepoint.com/:u:/g/personal/2018211832_mail_hfut_edu_cn/Ed9ahGjw-vxHlrsNSE6ttdUBhJ8zzEJmijZWV5Cf3PuINA?e=BObeoa"><code >EditPlus_5.3.0</code></a> 2.13MB; 破解版;文本编辑器</li>
+<p>支持HTML、CSS、PHP、ASP、Perl、 C/C++、Java、 JavaScript和 VBScript等语法高亮显示</p>
+<hr>
+<li><a href="https://mailhfuteducn-my.sharepoint.com/:u:/g/personal/2018211832_mail_hfut_edu_cn/EeuqniZ-zEhEhgc-dXkRaacB9ugYqBi6ckg9wubQ1ooA-Q?e=JWp8JN"><code >MATLAB R2018b Win64.zip</code></a> 11.7GB; 含破解文件和教程</li>
+<hr>
+<li><a href="https://mailhfuteducn-my.sharepoint.com/:u:/g/personal/2018211832_mail_hfut_edu_cn/EUXWUdGeG5VClgE7Jw-5ieIB4CbCoJOE3V81DG4dO4ph0A?e=Jk9B4N"><code >Quartus II13.0</code></a> 2.23GB; 含安装、破解文件和器件库</li>
+<hr>
+<li><a href="https://mailhfuteducn-my.sharepoint.com/:u:/g/personal/2018211832_mail_hfut_edu_cn/EaurY-WBzYJPvbu2FME-jxABloU9Z6x8fXrGi6szSZIXkA?e=8ofsBT"><code >ModelSim SE 10.4.zip</code></a> 495MB; 和Quartus协同</li>
+<hr>
+
+<li><a href="https://mailhfuteducn-my.sharepoint.com/:u:/g/personal/2018211832_mail_hfut_edu_cn/EYPZVvVaJZlMmbTwNQhS9WcB5zdOVNkLmE4n9eQNoBH7zg?e=pAEYX3"><code >Multisim14.0.zip</code></a> 959MB; 含Activator; 搭建电路原理图，并对电路进行仿真</li>
+  <hr>          
+<li><a href="https://mailhfuteducn-my.sharepoint.com/:u:/g/personal/2018211832_mail_hfut_edu_cn/Eer0ptcYsEZGsNo8grR7gO0BIFtEtPn3qvswrgA67OYDsQ?e=0JxGJj"><code >Origin 2019b 64Bit</code></a> 1.52GB; 制图软件</li>			
+		  <hr>   	
+			</form>
+</div>
+
+
+
+
+<div id="form5" class=" text-center" style="width:70%;height:auto;margin:0 auto;background-color:white;opacity: 0.9;border:2px solid #96c2f1;border-radius: 10px;font-size:20px;color:#00aaff">
+            <form>
+<a href="#mid" onclick="javascript:top.location='javascript:alert0()';" style="float: right;color: #00aaff;"><i class="fa fa-times fa-4x"></i></a>
+<br>
+<h1  style="font-size:35px;color:red;">游戏</h1>
+<h1 class="link-title fadeInLeft animated"><i class="fa fa-download fa-2x"></i></h1>
+<p>均为破解版</p>
+
+<li><a href="https://mailhfuteducn-my.sharepoint.com/:f:/g/personal/2018211832_mail_hfut_edu_cn/EjkmPuGDbHJNgKaTQU46T4oBDOWnS-gSGlKcU-utODC4TQ?e=NvpUJC" target="_blank"><code >狙击手幽灵战士3</code></a>42.9GB</li>	
+	<hr>          
+<li><a href="https://mailhfuteducn-my.sharepoint.com/:f:/g/personal/2018211832_mail_hfut_edu_cn/EiA1X-raP29Noh50bWAcx6cBSPlbfHo-pgegsqFoc-K6_Q?e=eH1cqC"><code >狙击手：幽灵战士4</code></a> 11.3GB</li>			
+	<hr>   
+<li><a href="https://www.runoob.com/tags/tag-code.html"><code >无主之地3豪华版</code></a>待上传</li>			
+	<hr>   
+<li><a href="https://www.runoob.com/tags/tag-code.html"><code >塞尔达传说：旷野之息</code></a>待上传</li>				  
+	<hr>   
+<li><a href="https://mailhfuteducn-my.sharepoint.com/:f:/g/personal/2018211832_mail_hfut_edu_cn/EkBj2C7NRnNIjsa78dFzrpMBONC-5alhHYqMhzHKpuwuZg?e=0n0y3T"><code >精灵与萤火意志</code></a> 15.0GB</li>					  
+	<hr>   
+<li><a href="https://www.runoob.com/tags/tag-code.html"><code >战地5</code></a>待上传</li>				  
+			  
+			</form>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+    <script>
+        function alert1(){
+            $("#form1").css("display","block");
+        }
+        function alert2(){
+            $("#form2").css("display","block");
+        }
+        function alert3(){
+            $("#form3").css("display","block");
+        }
+        function alert4(){
+            $("#form4").css("display","block");
+        }
+        function alert5(){
+            $("#form5").css("display","block");
+        }
+		
+		
+		function alert0(){
+            $("#form1").css("display","none");
+			$("#form2").css("display","none");
+			$("#form3").css("display","none");
+			$("#form4").css("display","none");
+			$("#form5").css("display","none");
+        }
+    </script>
+
+
+
+
+
+
+
+
+<script type="text/javascript">var showmenu = false;$(document).scroll(function() {var sctop = window.screen.availHeight - 160;if($(this).scrollTop() > sctop) {$(".header-logo").css({"background":"#FFFFFF", "color":"#333333", "box-shadow":"0px 0px 8px rgba(0,0,0,0.2)"});$(".header-logo .logo a").css({"color":"#333333"});$(".header-logo .menu .item").css({"color":"#333333"});} else {$(".header-logo").css({"background":"rgba(0,0,0,0)", "color":"#FFFFFF", "box-shadow":"0px 0px 0px rgba(0,0,0,0)"});$(".header-logo .menu .item").css({"color":"#FFFFFF"});$(".header-logo .logo a").css({"color":"#FFFFFF"});}});function hidenav(){$(".header-logo .menunav").css({"left":"100vw"});showmenu = false;}function shownav() {if(showmenu) {$(".header-logo .menunav").css({"left":"100vw"});showmenu = false;} else {$(".header-logo .menunav").css({"left":"0vw"});showmenu = true;}}/*var _zdt = _zdt || [];(function() {var zd = document.createElement("script");zd.src = "https://api.zerodream.net/v1/webasync";var ds = document.getElementsByTagName("script")[0];ds.parentNode.insertBefore(zd, ds);})();*/</script>
+<script type="text/javascript">
+
+		var currentImg = 0;
+		var maxImgNum = $(".backgrounds .img").length;
+		setInterval(function() {
+			var nowImg = $($(".backgrounds .img")[currentImg]);
+			var nextImg;
+			try {
+				nextImg = $($(".backgrounds .img")[currentImg + 1]);
+				currentImg++;
+			} catch(e) {
+				nextImg = $($(".backgrounds .img")[0]);
+				currentImg = 0;
+			}
+			if(currentImg >= maxImgNum) {
+				nextImg = $($(".backgrounds .img")[0]);
+				currentImg = 0;
+			}
+			nowImg.fadeOut();
+			nextImg.fadeIn();
+		}, 5000);
+	</script>
+</body>
+<!-- Mirrored from xyxywan.gitee.io/web/software.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 16 Aug 2022 00:45:18 GMT -->
+</html>
