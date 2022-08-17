@@ -1,7 +1,7 @@
 //console
 $(function() {
-	    console.log("%c Yuxin Official %c", "background:#00aaff; color:#ffffff", "", "https://心.top");
-	    console.log("%c 本站gitee源码 %c", "background:#ff0000; color:#ffffff", "", "https://gitee.com/xyxywan/web");
+	    console.log("%c JingNuoWang031 %c", "background:#00aaff; color:#ffffff", "", "https://jnw031.github.io");
+	    console.log("%c 本站github源码 %c", "background:#ff0000; color:#ffffff", "", "https://github.com/jnw031/jnw031.github.io");
 		console.log("%c 初始live2d模型 %c", "background:#00ff00; color:#ffffff", "",randmodel);
 	});	
 
@@ -32,10 +32,6 @@ var showmenu = false;
 				showmenu = false;} 
 			else {$(".header-logo .menunav").css({"left":"0vw"});
 				showmenu = true;}}
-				/*var _zdt = _zdt || [];(function() {var zd = document.createElement("script");
-				zd.src = "https://api.zerodream.net/v1/webasync";
-				var ds = document.getElementsByTagName("script")[0];
-				ds.parentNode.insertBefore(zd, ds);})();*/
 //change bg_URL -->
 		function randomNum(minNum,maxNum){
 			//生成从minNum到maxNum的随机数
@@ -66,7 +62,7 @@ var showmenu = false;
 		function randomIMG(int){
 			arr0[int] = randomNum(1,18);
 			while(isRepeat(arr0)){arr0[int] = randomNum(1,18);}//防止图片重复
-			var gitee = 'https://xyxywan.gitee.io/web/img/banner_bg';
+			var gitee = 'https://jnw031.github.io/img/banner_bg';
 			var imgURL = gitee + arr0[int] +".webp";
 			//[div]document.getElementById("BackgroundArea").style.backgroundImage="url("+imgURL+")";
 			document.getElementById("img"+int).src= imgURL;
