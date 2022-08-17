@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta name="renderer" content="webkit"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="generator" content="HBuilder X 2.9.3"/>
+<meta name="description" content="主页"/>
+<meta name="author" content="lubswang@outlook.com"/>
+
+<title>站点列表 - jnw031</title>
+
+<!-- 
+
+	JS 
+	
+-->
+<script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+<script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/animejs/2.0.0/anime.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/mainjs.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="js/audio.js"></script>
+
+	
+<!-- 
+
+CSS 
+
+-->
+<link rel="icon" type="image/x-icon" href="./favicon.ico">
+<link rel="stylesheet"	type="text/css" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+<link rel="stylesheet"	type="text/css" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet"	type="text/css" href="https://cdn.bootcdn.net/ajax/libs/animate.css/3.7.2/animate.min.css"/>
+<link rel="stylesheet"	type="text/css" href="css/mainstyle.css"/>
+<link rel="stylesheet"	type="text/css" href="css/audio.css"/>
+<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+
+
+</head>
+
+<!-- 点击的烟花效果 -->
+<canvas class="fireworks" style="position:fixed;">
+	<script type="text/javascript" src="./js/fireworks.js"></script>
+	<script type="text/javascript" src="./js/fireworks.js"></script>
+	<script type="text/javascript" src="./js/fireworks.js"></script>
+	<script type="text/javascript" src="./js/fireworks.js"></script>	
+</canvas>
+
+<div class="logo">
+	<div class="header-logo" style="background: rgba(0, 0, 0, 0); color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px;text-decoration: none;">
+	<div class="container">
+	<div class="row">
+	<div class="col-sm-12">
+		<h2 class="logo fadeInLeft animated"><a href="https://jnw031.github.io/"><img src="./img/tx.png" style="width: 40px;height: 40px;border-radius: 10px "></a><a href="https://jnw031.github.io/" style="color: rgb(255, 255, 255);"> JingNuoWang031</a></h2>
+		<div class="menu">
+		<div class="menunav fadeInDown animated" style="left: 100vw;">
+			<div class="hiddenonpc"><h3>菜单</h3><a  onclick="shownav()"><i class="fa fa-angle-right"></i></a></div>
+			<a href="https://jnw031.github.io/" class="item" style="color: rgb(255, 255, 255);">主页</a>
+			<a href="./contact.html" target="_self" class="item" style="color: rgb(255, 255, 255);">联系</a>
+			<span>
+				<a href="#" class="item">友链</a>
+				<ul ><li><a style=" margin-top:10px;"; href="https://mikemo2195054.github.io/cn.html" class="item" target="_blank">Mike</a></li></ul>
+			</span>
+		</div>
+		<a  class="item" id="shownav" onclick="shownav()" style="color: rgb(255, 255, 255);"><i class="fa fa-navicon"></i></a>
+		</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+	
+
+<div class="home-bannar" onclick="hidenav()">
+	
+	<div class="backgrounds" >
+		<div class="img" style="display: block;display: flex;"><img id="img1" src="./img/banner_bg1.jpg"></div>
+		<div class="img" style="display: none;"><img id="img2" src="img/banner_bg2.jpg"></div>
+		<!-- change background -->
+		<script type="text/javascript">
+			var bgimg1 = $($(".backgrounds .img")[0]);
+			var bgimg2 = $($(".backgrounds .img")[1]);
+			var ifbg1 = true;
+			var t1 = null;
+			function chbg() {
+				if(ifbg1){
+					bgimg1.fadeOut(1500);
+					bgimg2.fadeIn(1500);
+					ifbg1 = false;
+					setTimeout("randomIMG(1)","3000");
+				}else {
+					bgimg2.fadeOut(1500);
+					bgimg1.fadeIn(1500);
+					ifbg1 = true;
+					setTimeout("randomIMG(2)","3000");
+				}
+			}
+			t1 = setInterval(chbg, 10000);
+			document.addEventListener('visibilitychange',function(){
+				// 监听 visibility change 事件
+				if(document.hidden){
+						clearInterval(t1);
+				} else {
+					t1 = setInterval(chbg, 10000);
+					showMessage('你终于回来啦！', 2000);
+					}
+			});
+		</script>		
+	</div>
+
+	<div class="shadow"></div>
+	<div class="inbox">
+		<div class="inbox2">
+			<div style="text-align:center;margin:150px 0; font:normal 14px/24px 'MicroSoft YaHei';"></div>
+			<h2 class="line1 bounceInDown animated">站点列表</h2>
+			<h2><p class="line2 bounceInLeft animated delay-h5s">包含域名和一些其他页面地址</p></h2>
+			<div class="joinbtn"><a onclick="scrollToId('Central',1000)" ><button class="button2 bounceInLeft animated delay-1s" style="height: 64px;">CHECK <i class="fa fa-paper-plane-o"></i></button></a></div>
+		</div>
+	</div>
+</div>
+
+
+
+<div id="Central" class="body-part3">
+	<br /><br />
+	
+	<h1 class="link-title fadeInRight animated">介绍</h1>
+	<p class="link-subtitle fadeInLeft animated">Check it out?</p>
+
+	<div class="link cont-1 fadeInUp animated">
+	<a href="https://wangjingnuo.github.io" target="_top">
+	<h1><i class="fa fa-book"></i></h1>
+	<h3>个人网站</h3>
+	<p>Personal Website</p>
+	<p>&nbsp;</p>
+	</a>
+	</div>
+	<!--
+	<div class="link cont-2 fadeInUp animated delay-h5s">
+	<a href="//47.112.119.110:8080/" target="_blank">
+	<h1><i class="fa fa-search"></i></h1>
+	<h3>xyxywan.xyz</h3>
+	<p>感觉算是个主页吧</p>
+	<p>&nbsp;</p>
+	</a>
+	</div>
+	-->
+	<div class="link cont-2 fadeInUp animated delay-1s">
+	<a href="https://github.com/jnw031/" target="_blank">
+	<h1><i class="fa fa-code"></i></h1>
+	<h3>GitHub</h3>
+	<p>Personal Code Repository</p>
+	<p>&nbsp;</p>
+	</a>
+	</div>
+
+	<div class="link cont-3 fadeInUp animated ">
+	<a href="https://lubswang031.blog.luogu.org/" target="_blank">
+	<h1><i class="fa fa-bookmark-o"></i></h1>
+	<h3>学术博客</h3>
+	<p>Study Blog</p>
+	<p>&nbsp;</p>
+	</a>
+	</div>
+	
+	<div class="link cont-3 fadeInUp animated delay-1s">
+	<a href="https://cnblogs.com/jnw031" target="_blank">
+	<h1><i class="fa fa-gamepad"></i></h1>
+	<h3>生活博客</h3>
+	<p>Life Blog</p>
+	<p>&nbsp;</p>
+	</a>
+	</div>
+	
+
+<!--
+	<div class="link cont-2 fadeInUp animated delay-1s">
+	<a href="https://yxin.ink/" target="_blank">
+	<h1><i class="fa fa-search-minus"></i></h1>
+	<h3>yxin.ink</h3>
+	<p>鸽</p>
+	<p>以后可能会换这个当主页</p>
+	<p>&nbsp;</p>
+	</a>
+	</div>
+-->
+</div>
+
+<div class="body-part1">
+	<div class="frame">
+		<div class="cont-1 fadeInLeft animated">
+		<h1><i class="fa fa-thumbs-o-up"></i></h1>
+		<h3>点赞</h3>
+		<p>Give me a thumbs up!</p>
+		</div>
+
+		<div class="cont-2 fadeInUp animated">
+		<h1><i class="fa fa-universal-access"></i></h1>
+		<h3>投币</h3>
+		<p>Throw me a coin!</p>
+		</div>
+
+		<div class="cont-3 fadeInRight animated">
+		<h1><i class="fa fa-star-o"></i></h1>
+		<h3>收藏</h3>
+		<p>Bookmark this content!</p>
+		</div>
+
+	</div>
+</div>
+
+<div class="body-part2 text-center" >
+	<br />
+
+	<br />	
+	<h1 class="link-title fadeInLeft animated" style="margin:auto;">服务列表</h1>
+	<br />
+	<br />
+	<div style="width: 80%;margin:auto;display: flex;justify-content: center;align-items: center;flex-wrap: wrap;">
+		<!--
+		<div style="width:240px; height:100px;float: left;margin: auto;">
+		<a href="https://xyxywan.xyz/" target="_Blank"><button class="button2">网课录屏 <i class="fa fa-play-circle-o"></i></button></a>
+		</div>
+		-->
+		<div style="width:240px; height:100px;float: left;margin:auto;">
+		<a href="https://blog-jnw031.github.io/" target="_Blank"><button class="button2">独立博客 <i class="fa fa-windows"></i></button></a>
+		</div>
+
+		<div style="width:240px; height:100px;float: left;margin:auto;">
+		<a href="https://space.bilibili.com/589321084" target="_Blank"><button class="button2">B站账号 <i class="fa fa-heart"></i></button></a>
+		</div>
+
+		<div style="width:240px; height:100px;float: left;margin:auto;">
+		<a href="./software.html" target="_Blank"><button class="button2">软件资源 <i class="fa fa-desktop"></i></button></a>
+		</div>
+
+		<div style="width:240px; height:100px;float: left;margin:auto;">
+		<a href="https://py.yuxinair.workers.dev/" target="_Blank"><button class="button2" style="text-decoration:line-through;">科学上网 <i class="fa fa-globe"></i></button></a>
+		</div>
+
+		<div style="width:240px; height:100px;float: left;margin:auto;">
+		<a href="baidu_help.html" target="_Blank"><button class="button2">度盘文库下载 <span class="iconfont icon-baiduyun1193372easyiconnet" style="font-size: 25px;"></span></button></a>
+		</div>
+		
+		<div style="width:240px; height:100px;float: left;margin:auto;">
+		<a href="domain.html" target="_Blank"><button class="button2" style="text-decoration:line-through;">域名邮箱 <i class="fa fa-envelope-o"></i></button></a>
+		</div>
+		
+		<div style="width:240px; height:100px;float: left;margin:auto;">
+		<a href="https://iou.ink/?ID=186e9" target="_Blank"><button class="button2" >邮件验证 <i class="fa fa-share"></i></button></a>
+		</div>
+
+		<div style="width:240px; height:100px;float: left;margin:auto;">
+		<a href="https://iou.ink/?ID=186ea" target="_Blank"><button class="button2" >短域名生成<i class="fa fa-link"></i></button></a>
+		</div>
+		
+		<div style="width:240px; height:100px;float: left;margin:auto;">
+		<a href="https://jnw031.github.io/baidu/" target="_Blank"><button class="button2" >让我帮你百度<i class="fa fa-wheelchair"></i></button></a>
+		</div>
+
+	</div>
+
+	<a style="color: white;font-weight: 300;"><center> <hr width="80%"color=#987cb9 size=2px></center></a>
+</div>
+
+
+</body>
+<!-- Mirrored from xyxywan.gitee.io/web/pages.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 16 Aug 2022 00:44:11 GMT -->
+</html>
