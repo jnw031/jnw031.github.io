@@ -63,7 +63,7 @@ var showmenu = false;
 			arr0[int] = randomNum(1,18);
 			while(isRepeat(arr0)){arr0[int] = randomNum(1,18);}//防止图片重复
 			var github = 'https://jnw031.github.io/img/banner_bg';
-			var imgURL = github + arr0[int] +".webp";
+			var imgURL = github + arr0[int] +".jpg";
 			//[div]document.getElementById("BackgroundArea").style.backgroundImage="url("+imgURL+")";
 			document.getElementById("img"+int).src= imgURL;
 			preloadImg([imgURL]);
