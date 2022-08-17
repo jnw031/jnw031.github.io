@@ -42,14 +42,6 @@ CSS
 <link rel="stylesheet"	type="text/css" href="css/audio.css"/>
 <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
 
-<style type="text/css">
-	body{
-		background: url("./img/banner_bg1.jpg") no-repeat center center fixed;
-                -webkit-background-size: cover;
-                -o-background-size: cover;                
-                background-size: cover;
-	}
-	</style>
 
 </head>
 
@@ -85,6 +77,43 @@ CSS
 	</div>
 </div>
 	
+
+<div class="home-bannar" onclick="hidenav()">
+	
+	<div class="backgrounds" >
+		<div class="img" style="display: block;display: flex;"><img id="img1" src="./img/banner_bg1.jpg"></div>
+		<div class="img" style="display: none;"><img id="img2" src="img/banner_bg2.jpg"></div>
+		<!-- change background -->
+		<script type="text/javascript">
+			var bgimg1 = $($(".backgrounds .img")[0]);
+			var bgimg2 = $($(".backgrounds .img")[1]);
+			var ifbg1 = true;
+			var t1 = null;
+			function chbg() {
+				if(ifbg1){
+					bgimg1.fadeOut(1500);
+					bgimg2.fadeIn(1500);
+					ifbg1 = false;
+					setTimeout("randomIMG(1)","3000");
+				}else {
+					bgimg2.fadeOut(1500);
+					bgimg1.fadeIn(1500);
+					ifbg1 = true;
+					setTimeout("randomIMG(2)","3000");
+				}
+			}
+			t1 = setInterval(chbg, 10000);
+			document.addEventListener('visibilitychange',function(){
+				// 监听 visibility change 事件
+				if(document.hidden){
+						clearInterval(t1);
+				} else {
+					t1 = setInterval(chbg, 10000);
+					showMessage('你终于回来啦！', 2000);
+					}
+			});
+		</script>		
+	</div>
 
 	<div class="shadow"></div>
 	<div class="inbox">
