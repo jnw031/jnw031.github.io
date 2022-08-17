@@ -62,8 +62,8 @@ var showmenu = false;
 		function randomIMG(int){
 			arr0[int] = randomNum(1,18);
 			while(isRepeat(arr0)){arr0[int] = randomNum(1,18);}//防止图片重复
-			var gitee = 'https://jnw031.github.io/img/banner_bg';
-			var imgURL = gitee + arr0[int] +".webp";
+			var github = 'https://jnw031.github.io/img/banner_bg';
+			var imgURL = github + arr0[int] +".webp";
 			//[div]document.getElementById("BackgroundArea").style.backgroundImage="url("+imgURL+")";
 			document.getElementById("img"+int).src= imgURL;
 			preloadImg([imgURL]);
