@@ -1,4 +1,4 @@
-# [网址](https://jnw031.github.io)
+# [网址](https://jnw031.cf)
 
 - 由[MikuMo](https://github.com/mikemo2195054)帮助
 
